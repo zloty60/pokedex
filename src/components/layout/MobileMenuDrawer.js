@@ -55,7 +55,8 @@ const MobileMenuDrawer = ({ mobileOpen, handleDrawerToggle }) => {
 
 const useStyles = makeStyles((theme) => ({
   drawerPaper: {
-    width: 300,
+    maxWidth: 300,
+    width: "100%",
   },
   closeButton: {
     position: "fixed",
