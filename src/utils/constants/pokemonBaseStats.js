@@ -1,4 +1,5 @@
 // dane znalezione w internecie
+// nazwy kluczy muszą być takie same jak w api
 
 export const POKEMON_MAX_BASE_STATS = {
   hp: 255,

@@ -8,7 +8,7 @@ const PokemonList = ({ pokemonListForRender }) => {
       {pokemonListForRender.map((pokemon) => (
         <PokemonCard
           key={
-            pokemon.hasOwnProperty("pokemon") // allPokemons zwraca {name:"bulbasaur"} a type pokemon pokemon:{name:"bulbasaur"}
+            pokemon.hasOwnProperty("pokemon") // allPokemons zwraca {name:"bulbasaur"} a type zwraca pokemon pokemon:{name:"bulbasaur"}
               ? pokemon.pokemon.name
               : pokemon.name
           }

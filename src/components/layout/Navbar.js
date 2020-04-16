@@ -6,7 +6,6 @@ import {
   IconButton,
   Container,
   Box,
-  Button,
   Hidden,
   Typography,
 } from "@material-ui/core";

@@ -131,17 +131,3 @@ export function clearSearchPokemons() {
     type: CLEAR_SEARCH_POKEMONS,
   };
 }
-
-// export function savePokemon(name, url) {
-//   return {
-//     type: "SAVE_POKEMON",
-//     payload: { name, url },
-//   };
-// }
-
-// export function deleteSavedPokemon(name) {
-//   return {
-//     type: "REMOVE_SAVED_POKEMON",
-//     payload: name,
-//   };
-// }

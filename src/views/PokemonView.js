@@ -22,7 +22,7 @@ const PokemonView = (props) => {
   useEffect(() => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
     dispatch(getSinglePokemon(url));
-  }, [pokemonName]);
+  }, [pokemonName, dispatch]);
 
   return (
     <Container maxWidth="sm" className={classes.container}>

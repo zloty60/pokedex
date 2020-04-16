@@ -19,7 +19,7 @@ const SearchView = () => {
 
   useEffect(() => {
     dispatch(clearSearchPokemons());
-  }, []);
+  }, [dispatch]);
 
   const handleOnSubmit = (e) => {
     setIsSubmit(true);

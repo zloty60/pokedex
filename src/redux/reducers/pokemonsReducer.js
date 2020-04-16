@@ -128,18 +128,3 @@ const compare = (sort) => (a, b) => {
 };
 
 export default pokemonsReducer;
-
-// case "SAVE_POKEMON":
-//   console.log(action.payload);
-//   return {
-//     ...state,
-//     savedPokemons: [...state.savedPokemons, action.payload],
-//   };
-// case "REMOVE_SAVED_POKEMON":
-//   console.log(action.payload);
-//   return {
-//     ...state,
-//     savedPokemons: state.savedPokemons.filter(
-//       (pokemon) => action.payload !== pokemon.name
-//     ),
-//   };
