@@ -46,7 +46,7 @@ const PokemonView = (props) => {
             <AboutDetails pokemon={pokemon} value="weight" />
             <AboutDetails pokemon={pokemon} value="height" />
             <AboutDetails pokemon={pokemon} value="base_experience" />
-            {/* <Subtitle subtitle="Statistics" />
+            <Subtitle subtitle="Statistics" />
             {pokemon.stats
               ? pokemon.stats.map((stat) => (
                   <Box
@@ -59,12 +59,12 @@ const PokemonView = (props) => {
                       {stat.stat.name}
                     </Typography>
                     <StatisticsBar
-                      size={stat.base_stat}
+                      statName={stat.stat.name}
                       statValue={stat.base_stat}
                     />
                   </Box>
                 ))
-              : null} */}
+              : null}
 
             <Subtitle subtitle="Types" />
             <Box mt={2} mb={2} display="flex">
