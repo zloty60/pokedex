@@ -7,7 +7,18 @@ import BlockIcon from "@material-ui/icons/Block";
 
 const PokemonAvatar = ({ pokemonID, name, size }) => {
   const classes = useStyles({ size: size });
-  const url = `https://raw.githubusercontent.com/codenights/ultimate-pokedex/master/app/public/artwork/${pokemonID}.png`;
+
+  /*
+
+    Grafiki z pokeAPi są bardzo słabej jakości, dlatego zdjęcia pobieram stąd https://github.com/codenights/ultimate-pokedex/tree/master/app/public/artwork
+    z uwagi jednak na fakt iż autor może zmienić strukture folderów stowrzyłem osobne rezpozytrium z tymi zdjeciami i z niego pobierane
+    sa grafiki dodatkowo zoptymalizowałem je. Zarówno zdjęcia z pokeApi jak i powyższego zródła nie zawierają wszystkich pokemonow
+ 
+    //const url = `https://raw.githubusercontent.com/codenights/ultimate-pokedex/master/app/public/artwork/${pokemonID}.png`;
+
+    */
+
+  const url = `https://raw.githubusercontent.com/zloty60/pokemon_img/master/img/${pokemonID}.png`;
   return (
     <Img
       className={classes.img}
