@@ -7,19 +7,29 @@ import Alert from "@material-ui/lab/Alert";
 import {
   searchPokemon,
   clearSearchPokemons,
+  getPokemonsInit,
 } from "./../redux/actions/pokemonsActions";
 import PokemonList from "./../components/pokemonList/PokemonList";
 
 const SearchView = () => {
   const dispatch = useDispatch();
   const pokemonsFound = useSelector((state) => state.pokemons.pokemonsFound);
+  const allPokemons = useSelector((state) => state.pokemons.allPokemons);
   const [searchTxt, setSearchTxt] = useState("");
   const [isSubmit, setIsSubmit] = useState(false);
   const classes = useStyles();
 
   useEffect(() => {
     dispatch(clearSearchPokemons());
-  }, [dispatch]);
+    // allPokemons pobierana są na głównej stronie , jeżeli przejdziemy
+    // do wyszukiwarki nie bedąc wczesniej na głównej stronie nie zostatnie
+    // pobrana tablica i nie będzie możliwości przeszukiwania pokemonow
+    // dlatego dodaje taki warunek w przypadku gdyby podobna sytuacja istniała
+    // na innych stronach można by pobierać pokemony w komponencie APP
+    if (allPokemons.length === 0) {
+      dispatch(getPokemonsInit());
+    }
+  }, [dispatch, allPokemons.length]);
 
   const handleOnSubmit = (e) => {
     setIsSubmit(true);
@@ -48,7 +58,12 @@ const SearchView = () => {
               onChange={handleTxtValue}
             />
 
-            <Button color="primary" type="submit" variant="contained">
+            <Button
+              disabled={allPokemons.length === 0}
+              color="primary"
+              type="submit"
+              variant="contained"
+            >
               search
             </Button>
           </Box>
