@@ -18,10 +18,12 @@ const ShowPageSelect = () => {
 
   return (
     <FormControl variant="filled" className={classes.formControl}>
-      <InputLabel id="sort-label">pokazuj na stronie</InputLabel>
+      <InputLabel className={classes.inputLabel} id="show-label">
+        pokazuj na stronie
+      </InputLabel>
       <Select
-        labelId="sort-label"
-        id="sort-label-select"
+        labelId="show-label"
+        id="show-label-select"
         value={pageLimit}
         onChange={handleChange}
       >
@@ -44,5 +46,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       minWidth: 228,
     },
+  },
+  inputLabel: {
+    color: "#616161",
   },
 }));

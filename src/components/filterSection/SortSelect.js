@@ -19,7 +19,9 @@ const SortSelect = () => {
 
   return (
     <FormControl variant="filled" className={classes.formControl}>
-      <InputLabel id="sort-label">Sortuj</InputLabel>
+      <InputLabel className={classes.inputLabel} id="sort-label">
+        Sortuj
+      </InputLabel>
       <Select
         labelId="sort-label"
         id="sort-label-select"
@@ -44,5 +46,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       minWidth: 228,
     },
+  },
+  inputLabel: {
+    color: "#616161",
   },
 }));
