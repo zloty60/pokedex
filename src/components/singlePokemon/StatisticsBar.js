@@ -1,8 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { POKEMON_MAX_BASE_STATS } from "./../../utils/constants/pokemonBaseStats";
-import { calculateStatsToPercentages } from "./../../utils/helperFunctions";
+import { POKEMON_MAX_BASE_STATS } from "utils/constants/pokemonBaseStats";
+import { calculateStatsToPercentages } from "utils/helperFunctions";
 
 const StatisticsBar = ({ statValue, statName }) => {
   // api dostarcza mi base_stat , w internecie znalazłem maksymalne wartości dla base_stat

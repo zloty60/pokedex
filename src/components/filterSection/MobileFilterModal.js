@@ -17,7 +17,7 @@ import { useDispatch } from "react-redux";
 import {
   getPokemonsType,
   getPokemonsInit,
-} from "./../../redux/actions/pokemonsActions";
+} from "redux/actions/pokemonsActions";
 import PokemonTypesBtn from "./PokemonTypesBtn";
 
 const MobileFilterModal = () => {

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Grid, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import pokemonTypes from "./../../utils/data/pokemonTypes";
+import pokemonTypes from "utils/data/pokemonTypes";
 
 const PokemonTypesBtn = ({ onClickFn }) => {
   const btnType = useSelector((state) => state.pokemons.formOptions.type);

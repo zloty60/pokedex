@@ -8,8 +8,8 @@ import {
   searchPokemon,
   clearSearchPokemons,
   getPokemonsInit,
-} from "./../redux/actions/pokemonsActions";
-import PokemonList from "./../components/pokemonList/PokemonList";
+} from "redux/actions/pokemonsActions";
+import PokemonList from "components/pokemonList/PokemonList";
 
 const SearchView = () => {
   const dispatch = useDispatch();

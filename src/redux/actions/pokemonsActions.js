@@ -9,7 +9,7 @@ import {
   SET_PAGE_LIMIT,
   SEARCH_POKEMONS,
   CLEAR_SEARCH_POKEMONS,
-} from "./../../utils/constants/pokemonsReducerConstants";
+} from "utils/constants/pokemonsReducerConstants";
 
 import {
   asyncActionStart,
@@ -17,9 +17,9 @@ import {
   asyncActionError,
 } from "./asyncActions";
 
-import { BASIC } from "./../../utils/constants/sortTypeConstants";
+import { BASIC } from "utils/constants/sortTypeConstants";
 
-import { ALL_POKEMONS_URL } from "./../../utils/constants/urlConstants";
+import { ALL_POKEMONS_URL } from "utils/constants/urlConstants";
 
 // API nie oferuje możliwości sortowania pokemonów np.alfabetycznie dlatego pobieram wszystkie pokemony
 // i dzięki temu mogę je posortować właśnie np.alfabetczynie w przypadku gdy API zwracałoby ogromną ilość

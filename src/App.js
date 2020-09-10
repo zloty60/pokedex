@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom"; // HashRouter na potrzeby gh pages
-import Navbar from "./components/layout/Navbar";
-import MobileMenuDrawer from "./components/layout/MobileMenuDrawer";
-import RootView from "./views/RootView";
-import PokemonView from "./views/PokemonView";
-import InfoView from "./views/InfoView";
-import Search from "./views/SearchView";
-import NoMatch from "./views/NoMatch";
+import Navbar from "components/layout/Navbar";
+import MobileMenuDrawer from "components/layout/MobileMenuDrawer";
+import RootView from "views/RootView";
+import PokemonView from "views/PokemonView";
+import InfoView from "views/InfoView";
+import Search from "views/SearchView";
+import NoMatch from "views/NoMatch";
 
 function App() {
   const [mobileOpen, setMobileOpen] = useState(false);

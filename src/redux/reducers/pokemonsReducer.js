@@ -7,9 +7,9 @@ import {
   SET_PAGE_LIMIT,
   SEARCH_POKEMONS,
   CLEAR_SEARCH_POKEMONS,
-} from "./../../utils/constants/pokemonsReducerConstants";
+} from "utils/constants/pokemonsReducerConstants";
 
-import { BASIC, A_Z } from "./../../utils/constants/sortTypeConstants";
+import { BASIC, A_Z } from "utils/constants/sortTypeConstants";
 
 export const initialState = {
   allPokemons: [],

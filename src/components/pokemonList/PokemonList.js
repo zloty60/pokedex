@@ -1,6 +1,6 @@
 import React from "react";
-import PokemonCard from "./PokemonCard";
 import { Grid } from "@material-ui/core";
+import PokemonCard from "./PokemonCard";
 
 const PokemonList = ({ pokemonListForRender }) => {
   return (

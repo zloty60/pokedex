@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { FormControl, InputLabel, Select, MenuItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { sort } from "./../../redux/actions/pokemonsActions";
-import { BASIC, A_Z, Z_A } from "./../../utils/constants/sortTypeConstants";
+import { sort } from "redux/actions/pokemonsActions";
+import { BASIC, A_Z, Z_A } from "utils/constants/sortTypeConstants";
 
 const SortSelect = () => {
   const sortType = useSelector((state) => state.pokemons.formOptions.sort);

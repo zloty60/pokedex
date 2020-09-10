@@ -3,13 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { Box, Typography, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { getSinglePokemon } from "./../redux/actions/pokemonsActions";
-import PokemonAvatar from "./../components/common/PokemonAvatar";
-import SkeletonLoader from "./../components/common/SkeletonLoader";
-import AboutDetails from "./../components/singlePokemon/AboutDetails";
-import PokemonName from "./../components/singlePokemon/PokemonName";
-import Subtitle from "./../components/singlePokemon/Subtitle";
-import StatisticsBar from "./../components/singlePokemon/StatisticsBar";
+import { getSinglePokemon } from "redux/actions/pokemonsActions";
+import PokemonAvatar from "components/common/PokemonAvatar";
+import SkeletonLoader from "components/common/SkeletonLoader";
+import AboutDetails from "components/singlePokemon/AboutDetails";
+import PokemonName from "components/singlePokemon/PokemonName";
+import Subtitle from "components/singlePokemon/Subtitle";
+import StatisticsBar from "components/singlePokemon/StatisticsBar";
 
 const PokemonView = (props) => {
   const dispatch = useDispatch();

@@ -3,14 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import { Hidden, Container, Box, Typography } from "@material-ui/core";
 
-import SkeletonLoader from "./../components/common/SkeletonLoader";
-import DesktopFilterSection from "./../components/filterSection/DesktopFilterSection";
-import MobileFilterModal from "./../components/filterSection/MobileFilterModal";
-import PokemonList from "./../components/pokemonList/PokemonList";
-import SortSelect from "./../components/filterSection/SortSelect";
-import ShowPageSelect from "./../components/filterSection/ShowPageSelect";
-import PokemonPagination from "./../components/pokemonList/PokemonPagination";
-import { getPokemonsInit } from "../redux/actions/pokemonsActions";
+import SkeletonLoader from "components/common/SkeletonLoader";
+import DesktopFilterSection from "components/filterSection/DesktopFilterSection";
+import MobileFilterModal from "components/filterSection/MobileFilterModal";
+import PokemonList from "components/pokemonList/PokemonList";
+import SortSelect from "components/filterSection/SortSelect";
+import ShowPageSelect from "components/filterSection/ShowPageSelect";
+import PokemonPagination from "components/pokemonList/PokemonPagination";
+import { getPokemonsInit } from "redux/actions/pokemonsActions";
 
 const RootView = () => {
   const dispatch = useDispatch();

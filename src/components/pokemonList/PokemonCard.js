@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import PokemonAvatar from "./../common/PokemonAvatar";
+import PokemonAvatar from "components/common/PokemonAvatar";
 
 const PokemonCard = ({ name, url }) => {
   const classes = useStyles();

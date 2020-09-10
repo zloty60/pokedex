@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Pagination from "@material-ui/lab/Pagination";
 
-import { setPagination } from "./../../redux/actions/pokemonsActions";
+import { setPagination } from "redux/actions/pokemonsActions";
 
 const PokemonPagination = () => {
   const dispatch = useDispatch();
