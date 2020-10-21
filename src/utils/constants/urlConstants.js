@@ -1,1 +1,1 @@
-export const ALL_POKEMONS_URL = "https://pokeapi.co/api/v2/pokemon/?limit=964";
+export const ALL_POKEMONS_URL = "https://pokeapi.co/api/v2/pokemon/?limit=1050";
